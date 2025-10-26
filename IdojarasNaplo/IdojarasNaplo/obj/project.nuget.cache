@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gkeuGlAovTA=",
+  "dgSpecHash": "QJbtAJmjWS0=",
   "success": true,
   "projectFilePath": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\IdojarasNaplo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DAVIDOF\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\DAVIDOF\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
     "C:\\Users\\DAVIDOF\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.8\\microsoft.extensions.configuration.9.0.8.nupkg.sha512",
     "C:\\Users\\DAVIDOF\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.8\\microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",
