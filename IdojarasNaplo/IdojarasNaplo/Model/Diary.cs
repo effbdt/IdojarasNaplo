@@ -23,5 +23,10 @@ namespace IdojarasNaplo.Model
 
 		[ObservableProperty]
 		string weather;
+
+		public Diary GetCopy()
+		{
+			return (Diary)this.MemberwiseClone();
+		}
 	}
 }
