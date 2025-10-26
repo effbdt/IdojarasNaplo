@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace IdojarasNaplo
 {
+	[QueryProperty(nameof(EditedDiary), "DiaryEntry")]
 	public partial class MainPageViewModel : ObservableObject
 	{
 		public ObservableCollection<Diary> Diaries { get; set; }
