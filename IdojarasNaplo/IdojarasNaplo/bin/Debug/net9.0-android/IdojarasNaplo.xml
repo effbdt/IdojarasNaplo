@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IdojarasNaplo</name>
+    </assembly>
+    <members>
+        <member name="T:IdojarasNaplo.Diary">
+            <inheritdoc/>
+        </member>
+        <member name="P:IdojarasNaplo.Diary.Title">
+            <inheritdoc cref="F:IdojarasNaplo.Diary.title"/>
+        </member>
+        <member name="P:IdojarasNaplo.Diary.Body">
+            <inheritdoc cref="F:IdojarasNaplo.Diary.body"/>
+        </member>
+        <member name="P:IdojarasNaplo.Diary.Photopath">
+            <inheritdoc cref="F:IdojarasNaplo.Diary.photopath"/>
+        </member>
+        <member name="P:IdojarasNaplo.Diary.Location">
+            <inheritdoc cref="F:IdojarasNaplo.Diary.location"/>
+        </member>
+        <member name="P:IdojarasNaplo.Diary.Weather">
+            <inheritdoc cref="F:IdojarasNaplo.Diary.weather"/>
+        </member>
+        <member name="T:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.EditedDiary">
+            <inheritdoc cref="F:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.editedDiary"/>
+        </member>
+        <member name="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.Draft">
+            <inheritdoc cref="F:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.draft"/>
+        </member>
+        <member name="F:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.saveDiaryEntryCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.SaveDiaryEntryCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.SaveDiaryEntryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.SaveDiaryEntryAsync"/>.</summary>
+        </member>
+        <member name="T:IdojarasNaplo.MainPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:IdojarasNaplo.MainPageViewModel.SelectedDiary">
+            <inheritdoc cref="F:IdojarasNaplo.MainPageViewModel.selectedDiary"/>
+        </member>
+        <member name="F:IdojarasNaplo.MainPageViewModel.newDiaryEntryCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.MainPageViewModel.NewDiaryEntryCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.MainPageViewModel.NewDiaryEntryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.MainPageViewModel.NewDiaryEntryAsync"/>.</summary>
+        </member>
+        <member name="F:IdojarasNaplo.MainPageViewModel.editDiaryEntryCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.MainPageViewModel.EditDiaryEntryCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.MainPageViewModel.EditDiaryEntryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.MainPageViewModel.EditDiaryEntryAsync"/>.</summary>
+        </member>
+        <member name="F:IdojarasNaplo.MainPageViewModel.deleteEntryCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.MainPageViewModel.DeleteEntryCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.MainPageViewModel.DeleteEntryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.MainPageViewModel.DeleteEntry"/>.</summary>
+        </member>
+        <member name="F:IdojarasNaplo.MainPageViewModel.showDiaryDetailsCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.MainPageViewModel.ShowDiaryDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.MainPageViewModel.ShowDiaryDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.MainPageViewModel.ShowDiaryDetailsAsync"/>.</summary>
+        </member>
+        <member name="T:IdojarasNaplo.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Body">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Body" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Photopath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Photopath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Weather">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Weather" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EditedDiary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EditedDiary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Draft">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Draft" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SelectedDiary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SelectedDiary" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Body">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Body" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Photopath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Photopath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Weather">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Weather" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EditedDiary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EditedDiary" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Draft">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Draft" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SelectedDiary">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SelectedDiary" generated properties.</summary>
+        </member>
+    </members>
+</doc>

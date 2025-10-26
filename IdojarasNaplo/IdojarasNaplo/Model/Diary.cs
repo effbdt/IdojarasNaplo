@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdojarasNaplo.Model
+namespace IdojarasNaplo
 {
 	public partial class Diary : ObservableObject
 	{

@@ -1,14 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IdojarasNaplo.MainPage">
+             xmlns:local="clr-namespace:IdojarasNaplo"
+             x:Class="IdojarasNaplo.MainPage"
+             x:DataType="local:MainPageViewModel">
+    <Grid RowDefinitions="Auto,*" WidthRequest="300" RowSpacing="10" Padding="0,10">
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Button Text="New" Command="{Binding NewDiaryEntryCommand}"/>
+            <Button Text="Edit" Command="{Binding EditDiaryEntryCommand}"/>
+            <Button Text="Delete" Command="{Binding DeleteEntryCommand}"/>
+            <Button Text="Details" Command="{Binding ShowDiaryDetailsCommand}"/>
+        </HorizontalStackLayout>
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            
-        </VerticalStackLayout>
-    </ScrollView>
-
+        <Border StrokeThickness="5" Stroke="Yellow" StrokeShape="RoundRectangle 10" Grid.Row="1">
+            <CollectionView ItemsSource="{Binding Diaries}"
+                            SelectedItem="{Binding SelectedDiary}"
+                            SelectionMode="Single"
+                            BackgroundColor="LightYellow">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Diary">
+                        <Border Margin="5" Padding="5"
+                                Stroke="Orange" StrokeThickness="2" StrokeShape="RoundRectangle 10">
+                            <VerticalStackLayout>
+                                <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Title}"/>
+                                <Label FontSize="Small" Text="{Binding Body}"/>
+                                <Label FontSize="Small" Text="{Binding Weather}"/>
+                                <Label FontSize="Small" Text="{Binding Location}"/>
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Border>
+    </Grid>
 </ContentPage>
