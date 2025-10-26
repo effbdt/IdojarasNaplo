@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdojarasNaplo.ViewModels
+namespace IdojarasNaplo
 {
 	[QueryProperty(nameof(EditedDiary), "DiaryEntry")]
 	public partial class EditDiaryEntryViewModel : ObservableObject

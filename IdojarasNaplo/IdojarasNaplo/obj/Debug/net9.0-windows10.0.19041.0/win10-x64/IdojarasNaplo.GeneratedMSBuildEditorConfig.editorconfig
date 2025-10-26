@@ -39,6 +39,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = IdojarasNaplo.AppShell.xam
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/DAVIDOF/Desktop/Egyetem XD/Mobilprog/FelevesFeladat/IdojarasNaplo/IdojarasNaplo/EditDiaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = IdojarasNaplo.EditDiaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditDiaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditDiaryPage.xaml
+
 [C:/Users/DAVIDOF/Desktop/Egyetem XD/Mobilprog/FelevesFeladat/IdojarasNaplo/IdojarasNaplo/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = IdojarasNaplo.MainPage.xaml

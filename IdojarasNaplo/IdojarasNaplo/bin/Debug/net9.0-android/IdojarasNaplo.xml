@@ -22,21 +22,21 @@
         <member name="P:IdojarasNaplo.Diary.Weather">
             <inheritdoc cref="F:IdojarasNaplo.Diary.weather"/>
         </member>
-        <member name="T:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel">
+        <member name="T:IdojarasNaplo.EditDiaryEntryViewModel">
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.EditedDiary">
-            <inheritdoc cref="F:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.editedDiary"/>
+        <member name="P:IdojarasNaplo.EditDiaryEntryViewModel.EditedDiary">
+            <inheritdoc cref="F:IdojarasNaplo.EditDiaryEntryViewModel.editedDiary"/>
         </member>
-        <member name="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.Draft">
-            <inheritdoc cref="F:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.draft"/>
+        <member name="P:IdojarasNaplo.EditDiaryEntryViewModel.Draft">
+            <inheritdoc cref="F:IdojarasNaplo.EditDiaryEntryViewModel.draft"/>
         </member>
-        <member name="F:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.saveDiaryEntryCommand">
-            <summary>The backing field for <see cref="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.SaveDiaryEntryCommand"/>.</summary>
+        <member name="F:IdojarasNaplo.EditDiaryEntryViewModel.saveDiaryEntryCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.EditDiaryEntryViewModel.SaveDiaryEntryCommand"/>.</summary>
         </member>
-        <member name="P:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.SaveDiaryEntryCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.ViewModels.EditDiaryEntryViewModel.SaveDiaryEntryAsync"/>.</summary>
+        <member name="P:IdojarasNaplo.EditDiaryEntryViewModel.SaveDiaryEntryCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.EditDiaryEntryViewModel.SaveDiaryEntryAsync"/>.</summary>
         </member>
         <member name="T:IdojarasNaplo.MainPageViewModel">
             <inheritdoc/>

@@ -22,7 +22,7 @@ namespace IdojarasNaplo
 		{
 			set
 			{
-				if (value == null)
+				if (value != null)
 				{
 					if (SelectedDiary != null)
 					{
@@ -37,6 +37,7 @@ namespace IdojarasNaplo
 		public MainPageViewModel()
 		{
 			Diaries = new ObservableCollection<Diary>();
+			Diaries.Add(new Diary() { Title="Today", Body="Test", Location="123", Weather="good",Photopath="test"});
 		}
 
 		[RelayCommand]
