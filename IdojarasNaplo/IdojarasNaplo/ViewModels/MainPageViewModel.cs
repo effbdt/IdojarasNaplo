@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace IdojarasNaplo
 {
-	[QueryProperty(nameof(EditedDiary), "DiaryEntry")]
+	[QueryProperty(nameof(EditedDiary), "EditedDiary")]
 	public partial class MainPageViewModel : ObservableObject
 	{
 		public ObservableCollection<Diary> Diaries { get; set; }
@@ -77,27 +77,18 @@ namespace IdojarasNaplo
 			}
 		}
 
-		[RelayCommand]
-		public async Task SaveAsync()
+		public async Task ShowDiaryDetails()
 		{
-			if (SelectedDiary == null)
+			if (SelectedDiary != null)
 			{
-				EditedDiary.Id = Diaries.Count == 0 ? 1 : (Diaries.Max(d => d.Id) + 1);
-				Diaries.Add(EditedDiary);
-
-				await db.InsertAsync(EditedDiary);
-				EditedDiary = null;
-			}
-			else
-			{
-				int index = Diaries.IndexOf(SelectedDiary);
-				Diaries[index] = EditedDiary;
-
-				await db.UpdateAsync(EditedDiary);
-
-				SelectedDiary = null;
+				var param = new ShellNavigationQueryParameters
+				{
+					{"Diary", SelectedDiary }
+				};
+				await Shell.Current.GoToAsync("diarydetails", param);
 			}
 		}
+
 
 		[RelayCommand]
 		public async Task DeleteEntry()
@@ -112,7 +103,6 @@ namespace IdojarasNaplo
 			{
 				WeakReferenceMessenger.Default.Send("Select a diary entry to delete");
 			}
-
 		}
 
 		[RelayCommand]

@@ -9,10 +9,10 @@ namespace IdojarasNaplo
 		{
 			InitializeComponent();
 			BindingContext = viewModel;
-			//WeakReferenceMessenger.Default.Register<string>(this, async (r, m) =>
-			//{
-			//	await DisplayAlert("Warning", m, "OK");
-			//});
+			WeakReferenceMessenger.Default.Register<string>(this, async (r, m) =>
+			{
+				await DisplayAlert("Warning", m, "OK");
+			});
 		}
 
 

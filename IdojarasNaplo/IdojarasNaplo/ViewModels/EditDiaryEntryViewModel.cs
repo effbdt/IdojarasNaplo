@@ -23,7 +23,7 @@ namespace IdojarasNaplo
 		}
 
 		[RelayCommand]
-		public async Task SaveDiaryEntryAsync()
+		public async Task SaveDiaryEntry()
 		{
 			var param = new ShellNavigationQueryParameters
 			{
@@ -32,6 +32,7 @@ namespace IdojarasNaplo
 			await Shell.Current.GoToAsync("..", param);
 		}
 
+		[RelayCommand]
 		public async Task CancelEdit()
 		{
 			await Shell.Current.GoToAsync("..");
