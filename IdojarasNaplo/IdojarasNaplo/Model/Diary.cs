@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,17 @@ namespace IdojarasNaplo
 {
 	public partial class Diary : ObservableObject
 	{
+		[PrimaryKey]
+		public int Id { get; set; }
+
 		[ObservableProperty]
 		string title;
 
 		[ObservableProperty]
-		string body;
+		string? body;
 
 		[ObservableProperty]
-		string photopath;
+		string? photopath;
 
 		[ObservableProperty]
 		string location;
