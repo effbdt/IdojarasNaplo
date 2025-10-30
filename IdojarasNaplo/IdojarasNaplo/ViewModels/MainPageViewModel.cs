@@ -16,9 +16,6 @@ namespace IdojarasNaplo
 	{
 		public ObservableCollection<Diary> Diaries { get; set; }
 
-		private string dataBasePath = Path.Combine(FileSystem.Current.AppDataDirectory, "diaries.db3");
-		private SQLiteAsyncConnection db;
-
 		[ObservableProperty]
 		Diary selectedDiary;
 
@@ -45,8 +42,6 @@ namespace IdojarasNaplo
 		{
 			Diaries = new ObservableCollection<Diary>();
 			Diaries.Add(new Diary() { Title = "Today", Body = "Test", Location = "123", Weather = "good", Photopath = "test" });
-			db = new SQLiteAsyncConnection(dataBasePath);
-			db.CreateTableAsync<Diary>().Wait();
 		}
 
 		[RelayCommand]

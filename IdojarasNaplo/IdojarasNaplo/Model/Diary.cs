@@ -10,8 +10,10 @@ namespace IdojarasNaplo
 {
 	public partial class Diary : ObservableObject
 	{
-		[PrimaryKey]
-		public int Id { get; set; }
+		[ObservableProperty]
+		[property: PrimaryKey]
+		[property: AutoIncrement]
+		int id;
 
 		[ObservableProperty]
 		string title;
