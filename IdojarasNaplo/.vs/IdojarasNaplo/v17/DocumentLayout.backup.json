@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\diaryentrydetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\diaryentrydetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\diaryentrydetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\diaryentrydetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\data\\sqlitediaryentrydatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\data\\sqlitediaryentrydatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\model\\diary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\model\\diary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\data\\idiarydatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\data\\idiarydatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\viewmodels\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\diaryentrydetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\diaryentrydetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\diaryentrydetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\diaryentrydetails.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\editdiarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,14 +47,6 @@
       "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\model\\diary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\model\\diary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|c:\\users\\davidof\\desktop\\egyetem xd\\mobilprog\\felevesfeladat\\idojarasnaplo\\idojarasnaplo\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3E7E239-3674-41D5-9E9A-4C34A83536DC}|IdojarasNaplo\\IdojarasNaplo.csproj|solutionrelative:idojarasnaplo\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IdojarasNaplo\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,11 +58,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "IDiaryDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Data\\IDiaryDatabase.cs",
+              "RelativeDocumentMoniker": "IdojarasNaplo\\Data\\IDiaryDatabase.cs",
+              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Data\\IDiaryDatabase.cs",
+              "RelativeToolTip": "IdojarasNaplo\\Data\\IDiaryDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T18:03:43.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SQLiteDiaryEntryDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Data\\SQLiteDiaryEntryDatabase.cs",
+              "RelativeDocumentMoniker": "IdojarasNaplo\\Data\\SQLiteDiaryEntryDatabase.cs",
+              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Data\\SQLiteDiaryEntryDatabase.cs",
+              "RelativeToolTip": "IdojarasNaplo\\Data\\SQLiteDiaryEntryDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T18:00:50.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DiaryEntryDetails.xaml",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\DiaryEntryDetails.xaml",
               "RelativeDocumentMoniker": "IdojarasNaplo\\DiaryEntryDetails.xaml",
@@ -67,13 +101,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainPageViewModel.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\ViewModels\\MainPageViewModel.cs",
               "RelativeDocumentMoniker": "IdojarasNaplo\\ViewModels\\MainPageViewModel.cs",
               "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\ViewModels\\MainPageViewModel.cs",
               "RelativeToolTip": "IdojarasNaplo\\ViewModels\\MainPageViewModel.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T14:12:17.676Z",
               "EditorCaption": ""
@@ -81,19 +115,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DiaryEntryDetails.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
-              "RelativeDocumentMoniker": "IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
-              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
-              "RelativeToolTip": "IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:13:21.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\MainPage.xaml",
               "RelativeDocumentMoniker": "IdojarasNaplo\\MainPage.xaml",
@@ -106,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "EditDiaryPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\EditDiaryPage.xaml.cs",
               "RelativeDocumentMoniker": "IdojarasNaplo\\EditDiaryPage.xaml.cs",
@@ -114,12 +135,11 @@
               "RelativeToolTip": "IdojarasNaplo\\EditDiaryPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:04:01.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T16:04:01.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "EditDiaryEntryViewModel.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\ViewModels\\EditDiaryEntryViewModel.cs",
               "RelativeDocumentMoniker": "IdojarasNaplo\\ViewModels\\EditDiaryEntryViewModel.cs",
@@ -127,12 +147,49 @@
               "RelativeToolTip": "IdojarasNaplo\\ViewModels\\EditDiaryEntryViewModel.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwBgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T16:01:29.595Z",
+              "WhenOpened": "2025-10-26T16:01:29.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Diary.cs",
+              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Model\\Diary.cs",
+              "RelativeDocumentMoniker": "IdojarasNaplo\\Model\\Diary.cs",
+              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Model\\Diary.cs",
+              "RelativeToolTip": "IdojarasNaplo\\Model\\Diary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T15:24:06.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "IdojarasNaplo\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\MauiProgram.cs",
+              "RelativeToolTip": "IdojarasNaplo\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T15:57:04.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DiaryEntryDetails.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
+              "RelativeDocumentMoniker": "IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
+              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
+              "RelativeToolTip": "IdojarasNaplo\\DiaryEntryDetails.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:13:21.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "IdojarasNaplo\\MainPage.xaml.cs",
@@ -140,36 +197,11 @@
               "RelativeToolTip": "IdojarasNaplo\\MainPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T15:55:39.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T15:55:39.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Diary.cs",
-              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Model\\Diary.cs",
-              "RelativeDocumentMoniker": "IdojarasNaplo\\Model\\Diary.cs",
-              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\Model\\Diary.cs",
-              "RelativeToolTip": "IdojarasNaplo\\Model\\Diary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T15:24:06.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "IdojarasNaplo\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\MauiProgram.cs",
-              "RelativeToolTip": "IdojarasNaplo\\MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T15:57:04.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "C:\\Users\\DAVIDOF\\Desktop\\Egyetem XD\\Mobilprog\\FelevesFeladat\\IdojarasNaplo\\IdojarasNaplo\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeDocumentMoniker": "IdojarasNaplo\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",

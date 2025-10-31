@@ -85,6 +85,10 @@
               "version": "[9.0.10, )",
               "autoReferenced": true
             },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.9.172, )"
@@ -131,6 +135,10 @@
               "target": "Package",
               "version": "[9.0.10, )",
               "autoReferenced": true
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[9.0.10, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -179,6 +187,10 @@
               "version": "[9.0.10, )",
               "autoReferenced": true
             },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.9.172, )"
@@ -220,6 +232,10 @@
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.111, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[9.0.10, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
