@@ -122,9 +122,9 @@ namespace IdojarasNaplo
 			{
 				var param = new ShellNavigationQueryParameters
 				{
-					{"DiaryEntry", SelectedDiary}
+					{"DiaryEntry", selectedDiary}
 				};
-				await Shell.Current.GoToAsync("entryDetails", param);
+				await Shell.Current.GoToAsync("diaryDetails", param);
 			}
 
 		}

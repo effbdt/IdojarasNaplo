@@ -7,7 +7,7 @@
 			InitializeComponent();
 
 			Routing.RegisterRoute("editDiary", typeof(EditDiaryPage));
-			Routing.RegisterRoute("diarydetails", typeof(DiaryDetailsPage));
+			Routing.RegisterRoute("diaryDetails", typeof(DiaryDetailsPage));
 			Routing.RegisterRoute("entryDetails", typeof(DiaryDetailsPage));
 		}
 	}
