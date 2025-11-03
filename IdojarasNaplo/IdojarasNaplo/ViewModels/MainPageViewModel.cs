@@ -30,7 +30,7 @@ namespace IdojarasNaplo
 			{
 				if (SetProperty(ref _editedDiary, value) && value != null)
 				{
-					SaveDiarToCollectionAndDb(value);
+					SaveDiaryToCollectionAndDb(value);
 				}
 			}
 		}
@@ -52,7 +52,7 @@ namespace IdojarasNaplo
 			}
 		}
 
-		private async void SaveDiarToCollectionAndDb(Diary diary)
+		private async void SaveDiaryToCollectionAndDb(Diary diary)
 		{
 			var existing = Diaries.FirstOrDefault(d => d.Id == diary.Id);
 

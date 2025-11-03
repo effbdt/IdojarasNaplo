@@ -13,6 +13,9 @@
         <Entry Text="{Binding Draft.Title}"/>
         <Label Text="Entry"/>
         <Entry Text="{Binding Draft.Body}"/>
+        <Image Source="{Binding EditedDiary.Photopath}" HorizontalOptions="Start" WidthRequest="300"/>
+        <Button Text="Take Picture" Command="{Binding TakePhotoAsyncCommand}" />
+        <Button Text="Open Image" Command="{Binding OpenImageAsyncCommand}"/>
         <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
             <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}"/>
             <Button Text="Cancel" Command="{Binding CancelEditCommand}"/>

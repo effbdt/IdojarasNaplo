@@ -37,7 +37,42 @@ namespace IdojarasNaplo
 		{
 			await Shell.Current.GoToAsync("..");
 		}
+
+		[RelayCommand]
+		public async Task OpenImageAsync()
+		{
+			var image = await MediaPicker.Default.PickPhotoAsync();
+
+			if (image != null)
+			{
+				string localURL = Path.Combine(FileSystem.Current.AppDataDirectory, image.FileName);
+				if (!File.Exists(localURL))
+				{
+					using Stream stream = await image.OpenReadAsync();
+					using FileStream fs = File.OpenWrite(localURL);
+					await stream.CopyToAsync(fs);
+				}
+				EditedDiary.Photopath = localURL;
+			}
+		}
+
+		[RelayCommand]
+		public async Task TakePhotoAsync()
+		{
+			if (!MediaPicker.Default.IsCaptureSupported) return;
+
+			var image = await MediaPicker.Default.CapturePhotoAsync();
+			if (image != null)
+			{
+				string localURL = Path.Combine(FileSystem.Current.AppDataDirectory, image.FileName);
+				if (!File.Exists(localURL))
+				{
+					using Stream stream = await image.OpenReadAsync();
+					using FileStream fs = File.OpenWrite(localURL);
+					await stream.CopyToAsync(fs);
+				}
+				EditedDiary.Photopath = localURL;
+			}
+		}
 	}
-
-
 }
