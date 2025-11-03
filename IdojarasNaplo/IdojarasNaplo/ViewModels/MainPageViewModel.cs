@@ -16,6 +16,8 @@ namespace IdojarasNaplo
 	{
 		public ObservableCollection<Diary> Diaries { get; set; }
 
+		private readonly IDiaryDatabase _db;
+
 		[ObservableProperty]
 		Diary selectedDiary;
 
@@ -28,21 +30,47 @@ namespace IdojarasNaplo
 			{
 				if (SetProperty(ref _editedDiary, value) && value != null)
 				{
-					if (SelectedDiary != null)
-					{
-						Diaries.Remove(SelectedDiary);
-						SelectedDiary = null;
-					}
-					Diaries.Add(value);
+					SaveDiarToCollectionAndDb(value);
 				}
 			}
 		}
 
-		public MainPageViewModel()
+		public MainPageViewModel(IDiaryDatabase db)
 		{
+			_db = db;
 			Diaries = new ObservableCollection<Diary>();
-			Diaries.Add(new Diary() { Title = "Today", Body = "Test", Location = "123", Weather = "good", Photopath = "test" });
+			LoadDiaries();
 		}
+
+		public async void LoadDiaries()
+		{
+			Diaries.Clear();
+			var list = await _db.GetEntries();
+			foreach (var d in list)
+			{
+				Diaries.Add(d);
+			}
+		}
+
+		private async void SaveDiarToCollectionAndDb(Diary diary)
+		{
+			var existing = Diaries.FirstOrDefault(d => d.Id == diary.Id);
+
+			if (existing == null || diary.Id == 0)
+			{
+				await _db.CreateEntryAsync(diary);
+				Diaries.Add(diary);
+			}
+			else
+			{
+				await _db.UpdateEntryAsync(diary);
+
+				var index = Diaries.IndexOf(existing);
+				Diaries[index] = diary;
+			}
+
+		}
+
 
 		[RelayCommand]
 		public async Task NewDiaryEntryAsync()
@@ -72,25 +100,12 @@ namespace IdojarasNaplo
 			}
 		}
 
-		public async Task ShowDiaryDetails()
-		{
-			if (SelectedDiary != null)
-			{
-				var param = new ShellNavigationQueryParameters
-				{
-					{"Diary", SelectedDiary }
-				};
-				await Shell.Current.GoToAsync("diarydetails", param);
-			}
-		}
-
-
 		[RelayCommand]
 		public async Task DeleteEntry()
 		{
 			if (SelectedDiary != null)
 			{
-				await db.DeleteAsync(SelectedDiary);
+				await _db.DeleteEntryAsync(SelectedDiary);
 				Diaries.Remove(SelectedDiary);
 				SelectedDiary = null;
 			}
