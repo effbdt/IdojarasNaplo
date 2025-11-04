@@ -126,7 +126,19 @@ namespace IdojarasNaplo
 				};
 				await Shell.Current.GoToAsync("diaryDetails", param);
 			}
+		}
 
+		[RelayCommand]
+		public async Task GoToServicesPage()
+		{
+			if (Diaries != null)
+			{
+				var param = new ShellNavigationQueryParameters
+				{
+					{"AllDiaries", Diaries}
+				};
+				await Shell.Current.GoToAsync("servicePage", param);
+			}
 		}
 	}
 }

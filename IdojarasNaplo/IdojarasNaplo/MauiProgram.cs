@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using IdojarasNaplo;
+using Microsoft.Extensions.Logging;
 
 namespace IdojarasNaplo
 {
@@ -19,6 +20,8 @@ namespace IdojarasNaplo
 			builder.Services.AddTransient<EditDiaryEntryViewModel>();
 			builder.Services.AddSingleton<EditDiaryPage>();
 			builder.Services.AddSingleton<IDiaryDatabase, SQLiteDiaryEntryDatabase>();
+			builder.Services.AddSingleton<ServicesPage>();
+			builder.Services.AddTransient<ServicesViewModel>();
 
 
 #if DEBUG

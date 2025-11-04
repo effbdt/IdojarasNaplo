@@ -10,12 +10,13 @@
         </Style>
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="Auto,*" WidthRequest="350" RowSpacing="10" Padding="0,10">
-        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+    <Grid RowDefinitions="Auto,*" WidthRequest="350" RowSpacing="8" Padding="0,05">
+        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
             <Button Text="New" Command="{Binding NewDiaryEntryCommand}"/>
             <Button Text="Edit" Command="{Binding EditDiaryEntryCommand}"/>
             <Button Text="Delete" Command="{Binding DeleteEntryCommand}"/>
             <Button Text="Details" Command="{Binding ShowDiaryDetailsCommand}"/>
+            <Button Text="Services"/>
         </HorizontalStackLayout>
 
         <Border StrokeThickness="2" Stroke="Brown" StrokeShape="RoundRectangle 10" Grid.Row="1">
