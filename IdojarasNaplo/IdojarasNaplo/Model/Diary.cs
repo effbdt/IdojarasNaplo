@@ -31,7 +31,10 @@ namespace IdojarasNaplo
 		double? longitude;
 
 		[ObservableProperty]
-		string? weather;
+		string? weatherDescription;
+
+		[ObservableProperty]
+		double? temperature;
 
 		public Diary GetCopy()
 		{

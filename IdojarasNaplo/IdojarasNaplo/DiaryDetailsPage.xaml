@@ -7,10 +7,15 @@
             <Setter Property="FontSize" Value="Medium"/>
         </Style>
     </ContentPage.Resources>
-    <VerticalStackLayout Padding="10" Spacing="10">
-        <Label Text="{Binding Diary.Title,StringFormat='Title: {0}'}" FontAttributes="Bold"/>
-        <Label Text="{Binding Diary.Body}"/>
-        <Image Source="{Binding Diary.Photopath}" WidthRequest="300" HorizontalOptions="Start"/>
-
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="10">
+            <Label Text="{Binding Diary.Title,StringFormat='Title: {0}'}" FontAttributes="Bold"/>
+            <Label Text="{Binding Diary.Body}"/>
+            <Label Text="Weather" FontAttributes="Bold"/>
+            <Label Text="{Binding Diary.Temperature, StringFormat='Temp: {0} °C'}" />
+            <Label Text="{Binding Diary.WeatherDescription}" />
+            <Label Text="Attached Image:" FontAttributes="Bold"/>
+            <Image Source="{Binding Diary.Photopath}" WidthRequest="300" HorizontalOptions="Start"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

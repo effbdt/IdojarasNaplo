@@ -119,11 +119,11 @@ namespace IdojarasNaplo
 			var json = await client.GetStringAsync(url);
 			var data = JsonSerializer.Deserialize<WeatherResponse>(json, jsonOptions);
 
-			WeatherDescription = data?.Weather?[0].Description ?? "Unknown";
-			Temperature = data?.Main?.Temp ?? 0;
+			EditedDiary.WeatherDescription = data?.Weather?[0].Description;
+			EditedDiary.Temperature = data?.Main?.Temp;
 
-			OnPropertyChanged(nameof(WeatherDescription));
-			OnPropertyChanged(nameof(Temperature));
+			Draft.WeatherDescription = data?.Weather?[0].Description;
+			Draft.Temperature = data?.Main?.Temp;
 		}
 
 	}

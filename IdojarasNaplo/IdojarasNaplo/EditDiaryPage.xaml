@@ -24,8 +24,8 @@
 
             <Button Text="Get Weather" Command="{Binding GetWeatherCommand}" />
 
-            <Label Text="{Binding Temperature, StringFormat='Temp: {0} °C'}" />
-            <Label Text="{Binding WeatherDescription}" />
+            <Label Text="{Binding EditedDiary.Temperature, StringFormat='Temp: {0} °C'}" />
+            <Label Text="{Binding EditedDiary.WeatherDescription}" />
 
             <Button Text="Take Picture" Command="{Binding TakePhotoCommand}" />
             <Button Text="Open Image" Command="{Binding OpenImageCommand}"/>
