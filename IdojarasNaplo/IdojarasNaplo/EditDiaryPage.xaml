@@ -24,6 +24,7 @@
 
             <Button Text="Take Picture" Command="{Binding TakePhotoCommand}" />
             <Button Text="Open Image" Command="{Binding OpenImageCommand}"/>
+            <Button Text="Add location" Command="{Binding GetLocationCommand}"/>
 
             <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
                 <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}"/>

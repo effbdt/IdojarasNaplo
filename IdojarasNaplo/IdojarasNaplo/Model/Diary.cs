@@ -25,7 +25,10 @@ namespace IdojarasNaplo
 		string? photopath;
 
 		[ObservableProperty]
-		string? location;
+		double? latitude;
+
+		[ObservableProperty]
+		double? longitude;
 
 		[ObservableProperty]
 		string? weather;

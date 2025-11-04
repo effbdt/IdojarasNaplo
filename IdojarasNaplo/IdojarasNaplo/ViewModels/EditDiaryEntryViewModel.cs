@@ -77,5 +77,22 @@ namespace IdojarasNaplo
 				EditedDiary.Photopath = localURL;
 			}
 		}
+
+		[RelayCommand]
+		public async Task GetLocationAsync()
+		{
+			var location = await Geolocation.GetLastKnownLocationAsync();
+			double latitude = location?.Latitude ?? 0;
+			double longitude = location?.Longitude ?? 0;
+
+
+			EditedDiary.Latitude = latitude;
+			EditedDiary.Longitude = longitude;
+
+			Draft.Latitude = latitude;
+			Draft.Longitude = longitude;
+		}
+
+
 	}
 }
