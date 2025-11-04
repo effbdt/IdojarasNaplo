@@ -10,5 +10,6 @@
     <VerticalStackLayout Padding="10" Spacing="10">
         <Label Text="{Binding Diary.Title,StringFormat='Title: {0}'}" FontAttributes="Bold"/>
         <Label Text="{Binding Diary.Body}"/>
+        <Image Source="{Binding Diary.Photopath}" WidthRequest="300" HorizontalOptions="Start"/>
     </VerticalStackLayout>
 </ContentPage>

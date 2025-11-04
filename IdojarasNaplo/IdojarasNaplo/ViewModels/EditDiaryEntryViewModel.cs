@@ -52,6 +52,7 @@ namespace IdojarasNaplo
 					using FileStream fs = File.OpenWrite(localURL);
 					await stream.CopyToAsync(fs);
 				}
+				Draft.Photopath = localURL;
 				EditedDiary.Photopath = localURL;
 			}
 		}
@@ -60,6 +61,7 @@ namespace IdojarasNaplo
 		public async Task TakePhotoAsync()
 		{
 			if (!MediaPicker.Default.IsCaptureSupported) return;
+
 
 			var image = await MediaPicker.Default.CapturePhotoAsync();
 			if (image != null)
@@ -71,6 +73,7 @@ namespace IdojarasNaplo
 					using FileStream fs = File.OpenWrite(localURL);
 					await stream.CopyToAsync(fs);
 				}
+				Draft.Photopath = localURL;
 				EditedDiary.Photopath = localURL;
 			}
 		}

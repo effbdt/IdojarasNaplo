@@ -2,23 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IdojarasNaplo.EditDiaryPage">
+
     <ContentPage.Resources>
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="Medium"/>
             <Setter Property="FontAttributes" Value="Bold"/>
         </Style>
     </ContentPage.Resources>
-    <VerticalStackLayout Spacing="10" Padding="10">
-        <Label Text="Title"/>
-        <Entry Text="{Binding Draft.Title}"/>
-        <Label Text="Entry"/>
-        <Entry Text="{Binding Draft.Body}"/>
-        <Image Source="{Binding EditedDiary.Photopath}" HorizontalOptions="Start" WidthRequest="300"/>
-        <Button Text="Take Picture" Command="{Binding TakePhotoAsyncCommand}" />
-        <Button Text="Open Image" Command="{Binding OpenImageAsyncCommand}"/>
-        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
-            <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}"/>
-            <Button Text="Cancel" Command="{Binding CancelEditCommand}"/>
-        </HorizontalStackLayout>
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="10">
+            <Label Text="Title"/>
+            <Entry Text="{Binding Draft.Title}"/>
+
+            <Label Text="Entry"/>
+            <Entry Text="{Binding Draft.Body}"/>
+
+            <Image Source="{Binding EditedDiary.Photopath}"
+                   HorizontalOptions="Start"
+                   WidthRequest="300"/>
+
+            <Button Text="Take Picture" Command="{Binding TakePhotoCommand}" />
+            <Button Text="Open Image" Command="{Binding OpenImageCommand}"/>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}"/>
+                <Button Text="Cancel" Command="{Binding CancelEditCommand}"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

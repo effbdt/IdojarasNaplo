@@ -25,10 +25,10 @@ namespace IdojarasNaplo
 		string? photopath;
 
 		[ObservableProperty]
-		string location;
+		string? location;
 
 		[ObservableProperty]
-		string weather;
+		string? weather;
 
 		public Diary GetCopy()
 		{
