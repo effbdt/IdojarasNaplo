@@ -16,7 +16,7 @@
             <Button Text="Edit" Command="{Binding EditDiaryEntryCommand}"/>
             <Button Text="Delete" Command="{Binding DeleteEntryCommand}"/>
             <Button Text="Details" Command="{Binding ShowDiaryDetailsCommand}"/>
-            <Button Text="Services"/>
+            <Button Text="Services" Command="{Binding GoToServicesPageCommand}"/>
         </HorizontalStackLayout>
 
         <Border StrokeThickness="2" Stroke="Brown" StrokeShape="RoundRectangle 10" Grid.Row="1">
