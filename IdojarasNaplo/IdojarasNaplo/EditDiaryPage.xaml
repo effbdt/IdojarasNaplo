@@ -22,9 +22,13 @@
                    HorizontalOptions="Start"
                    WidthRequest="300"/>
 
+            <Button Text="Get Weather" Command="{Binding GetWeatherCommand}" />
+
+            <Label Text="{Binding Temperature, StringFormat='Temp: {0} °C'}" />
+            <Label Text="{Binding WeatherDescription}" />
+
             <Button Text="Take Picture" Command="{Binding TakePhotoCommand}" />
             <Button Text="Open Image" Command="{Binding OpenImageCommand}"/>
-            <Button Text="Add location" Command="{Binding GetLocationCommand}"/>
 
             <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
                 <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}"/>

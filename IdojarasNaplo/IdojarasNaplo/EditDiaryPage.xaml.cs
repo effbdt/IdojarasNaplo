@@ -1,3 +1,6 @@
+
+using System.Globalization;
+
 namespace IdojarasNaplo;
 
 public partial class EditDiaryPage : ContentPage
@@ -10,7 +13,7 @@ public partial class EditDiaryPage : ContentPage
 		BindingContext = viewModel;
 	}
 
-	protected override void OnNavigatedTo(NavigatedToEventArgs args)
+	protected override async void OnNavigatedTo(NavigatedToEventArgs args)
 	{
 		base.OnNavigatedTo(args);
 		viewModel.InitDraft();

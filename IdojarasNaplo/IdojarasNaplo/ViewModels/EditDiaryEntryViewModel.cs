@@ -1,9 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using GoogleGson;
+using Microsoft.Maui.Platform;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace IdojarasNaplo
@@ -16,6 +20,10 @@ namespace IdojarasNaplo
 
 		[ObservableProperty]
 		Diary draft;
+
+		public string WeatherDescription { get; set; }
+		public double Temperature { get; set; }
+
 
 		public void InitDraft()
 		{
@@ -78,8 +86,7 @@ namespace IdojarasNaplo
 			}
 		}
 
-		[RelayCommand]
-		public async Task GetLocationAsync()
+		private async Task GetLocationAsync()
 		{
 			var location = await Geolocation.GetLastKnownLocationAsync();
 			double latitude = location?.Latitude ?? 0;
@@ -93,6 +100,31 @@ namespace IdojarasNaplo
 			Draft.Longitude = longitude;
 		}
 
+		private static readonly JsonSerializerOptions jsonOptions =
+	new() { PropertyNameCaseInsensitive = true };
+
+		[RelayCommand]
+		public async Task GetWeatherAsync()
+		{
+			await GetLocationAsync();
+			if (EditedDiary.Latitude == null || EditedDiary.Longitude == null)
+				return;
+
+			string apiKey = "4643e617cca60585379ad4d2f6585636";
+
+			string url =
+				$"https://api.openweathermap.org/data/2.5/weather?lat={EditedDiary.Latitude}&lon={EditedDiary.Longitude}&units=metric&appid={apiKey}";
+
+			using var client = new HttpClient();
+			var json = await client.GetStringAsync(url);
+			var data = JsonSerializer.Deserialize<WeatherResponse>(json, jsonOptions);
+
+			WeatherDescription = data?.Weather?[0].Description ?? "Unknown";
+			Temperature = data?.Main?.Temp ?? 0;
+
+			OnPropertyChanged(nameof(WeatherDescription));
+			OnPropertyChanged(nameof(Temperature));
+		}
 
 	}
 }
