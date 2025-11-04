@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using GoogleGson;
 using Microsoft.Maui.Platform;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -125,6 +125,5 @@ namespace IdojarasNaplo
 			Draft.WeatherDescription = data?.Weather?[0].Description;
 			Draft.Temperature = data?.Main?.Temp;
 		}
-
 	}
 }

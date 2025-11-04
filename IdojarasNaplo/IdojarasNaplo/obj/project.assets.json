@@ -467,6 +467,50 @@
           }
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-android34.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/SkiaSharp.NativeAssets.Android.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -2921,6 +2965,35 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-android34.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-arm64/native/libSkiaSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -5379,6 +5452,35 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-android34.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-x64/native/libSkiaSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/SkiaSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -7833,6 +7935,32 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-android34.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/SkiaSharp.NativeAssets.Android.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -10291,6 +10419,32 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-android34.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/SkiaSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -12747,6 +12901,32 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Android": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-android34.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Android/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/SkiaSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -15182,6 +15362,58 @@
           }
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-ios17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-ios17.0/SkiaSharp.NativeAssets.iOS.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/ios/native/libSkiaSharp.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp": {
+            "assetType": "native",
+            "rid": "ios"
+          },
+          "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist": {
+            "assetType": "native",
+            "rid": "iossimulator"
+          },
+          "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {
+            "assetType": "native",
+            "rid": "iossimulator"
+          },
+          "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp": {
+            "assetType": "native",
+            "rid": "iossimulator"
+          }
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -15709,6 +15941,32 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-ios17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-ios17.0/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -16240,6 +16498,32 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-ios17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-ios17.0/SkiaSharp.NativeAssets.iOS.targets": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -16767,6 +17051,37 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-ios17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "native": {
+          "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist": {},
+          "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {},
+          "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-ios17.0/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -17298,6 +17613,37 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-ios17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "native": {
+          "runtimes/ios/native/libSkiaSharp.framework/Info.plist": {},
+          "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources": {},
+          "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-ios17.0/SkiaSharp.NativeAssets.iOS.targets": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -17825,6 +18171,32 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.iOS": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-ios17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.iOS/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-ios17.0/SkiaSharp.NativeAssets.iOS.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -18359,6 +18731,38 @@
           "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.MacCatalyst": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-maccatalyst17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.MacCatalyst/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-maccatalyst17.0/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/maccatalyst/native/libSkiaSharp.framework.zip": {
+            "assetType": "native",
+            "rid": "maccatalyst"
           }
         }
       },
@@ -18985,6 +19389,32 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.MacCatalyst": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-maccatalyst17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.MacCatalyst/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-maccatalyst17.0/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -19519,6 +19949,32 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.MacCatalyst": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-maccatalyst17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.MacCatalyst/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-maccatalyst17.0/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -20057,6 +20513,32 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.MacCatalyst": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-maccatalyst17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.MacCatalyst/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-maccatalyst17.0/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -20588,6 +21070,35 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.MacCatalyst": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-maccatalyst17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.MacCatalyst/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "native": {
+          "runtimes/maccatalyst/native/libSkiaSharp.framework.zip": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-maccatalyst17.0/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -21124,6 +21635,32 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.MacCatalyst": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-maccatalyst17.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.MacCatalyst/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net8.0-maccatalyst17.0/SkiaSharp.NativeAssets.MacCatalyst.targets": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -21910,6 +22447,43 @@
             "rid": "win-x86"
           },
           "runtimes/win-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-windows10.0.19041/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
             "assetType": "native",
             "rid": "win-x86"
           }
@@ -22726,6 +23300,29 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-windows10.0.19041/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -23448,6 +24045,29 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-windows10.0.19041/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/_._": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -24174,6 +24794,29 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-windows10.0.19041/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        }
+      },
       "sqlite-net-pcl/1.9.172": {
         "type": "package",
         "dependencies": {
@@ -24893,6 +25536,29 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-windows10.0.19041/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/_._": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -25627,6 +26293,32 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "SkiaSharp/3.119.1": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "3.119.1"
+        },
+        "compile": {
+          "ref/net8.0-windows10.0.19041/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/SkiaSharp.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/3.119.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/_._": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/libSkiaSharp.dll": {}
         }
       },
       "sqlite-net-pcl/1.9.172": {
@@ -27860,6 +28552,147 @@
         "tools/x86/GenXbf.dll"
       ]
     },
+    "SkiaSharp/3.119.1": {
+      "sha512": "+Ru1BTSZQne3Vp+vbSb50Ke3Nlc3ZnItxx4+751J9WZ8YzLKAV/n+9DAo4zFTyeCI//ueT63c+VybmTTpYBEiw==",
+      "type": "package",
+      "path": "skiasharp/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "icon.png",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.dll",
+        "lib/net8.0-android34.0/SkiaSharp.pdb",
+        "lib/net8.0-android34.0/SkiaSharp.xml",
+        "lib/net8.0-ios17.0/SkiaSharp.dll",
+        "lib/net8.0-ios17.0/SkiaSharp.pdb",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "lib/net8.0-maccatalyst17.0/SkiaSharp.pdb",
+        "lib/net8.0-macos14.0/SkiaSharp.dll",
+        "lib/net8.0-macos14.0/SkiaSharp.pdb",
+        "lib/net8.0-tizen7.0/SkiaSharp.dll",
+        "lib/net8.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net8.0-tvos17.0/SkiaSharp.dll",
+        "lib/net8.0-tvos17.0/SkiaSharp.pdb",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "lib/net8.0-windows10.0.19041/SkiaSharp.pdb",
+        "lib/net8.0/SkiaSharp.dll",
+        "lib/net8.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "ref/net462/SkiaSharp.dll",
+        "ref/net6.0/SkiaSharp.dll",
+        "ref/net8.0-android34.0/SkiaSharp.dll",
+        "ref/net8.0-ios17.0/SkiaSharp.dll",
+        "ref/net8.0-maccatalyst17.0/SkiaSharp.dll",
+        "ref/net8.0-macos14.0/SkiaSharp.dll",
+        "ref/net8.0-tizen7.0/SkiaSharp.dll",
+        "ref/net8.0-tvos17.0/SkiaSharp.dll",
+        "ref/net8.0-windows10.0.19041/SkiaSharp.dll",
+        "ref/net8.0/SkiaSharp.dll",
+        "ref/netstandard2.0/SkiaSharp.dll",
+        "ref/netstandard2.1/SkiaSharp.dll",
+        "skiasharp.3.119.1.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Android/3.119.1": {
+      "sha512": "b66ENYiCJEgbnwx9WoxTYMgoxL7LLQ8sfmlsTRr+ZLx1hyzATuHtiU2mcwf1jkrD7h4lN/jVysEoAzRFWDstPQ==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.android/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net8.0-android34.0/SkiaSharp.NativeAssets.Android.targets",
+        "icon.png",
+        "lib/net8.0-android34.0/_._",
+        "runtimes/android-arm/native/libSkiaSharp.so",
+        "runtimes/android-arm64/native/libSkiaSharp.so",
+        "runtimes/android-x64/native/libSkiaSharp.so",
+        "runtimes/android-x86/native/libSkiaSharp.so",
+        "skiasharp.nativeassets.android.3.119.1.nupkg.sha512",
+        "skiasharp.nativeassets.android.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.iOS/3.119.1": {
+      "sha512": "tmq83ijQAc6b7tiNTYHTqm7XPWHxiRxXxHgxLcjXWyZzIcZNOdqVfyBV5BcFDyRYJTdeNTGanVMe/mwXVeebEQ==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.ios/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net8.0-ios17.0/SkiaSharp.NativeAssets.iOS.targets",
+        "icon.png",
+        "lib/net8.0-ios17.0/_._",
+        "runtimes/ios/native/libSkiaSharp.framework/Info.plist",
+        "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp",
+        "runtimes/iossimulator/native/libSkiaSharp.framework/Info.plist",
+        "runtimes/iossimulator/native/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "runtimes/iossimulator/native/libSkiaSharp.framework/libSkiaSharp",
+        "skiasharp.nativeassets.ios.3.119.1.nupkg.sha512",
+        "skiasharp.nativeassets.ios.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.MacCatalyst/3.119.1": {
+      "sha512": "wQfvEqcVFak4MuEAyvbbSA/BPazuRz9zUJiKUMhZ0OfIf4PUtNLmlrEoHR9gaoGOJgrHn25zJAhQxTcODOxO5Q==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.maccatalyst/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "buildTransitive/net8.0-maccatalyst17.0/SkiaSharp.NativeAssets.MacCatalyst.targets",
+        "icon.png",
+        "lib/net8.0-maccatalyst17.0/_._",
+        "runtimes/maccatalyst/native/libSkiaSharp.framework.zip",
+        "skiasharp.nativeassets.maccatalyst.3.119.1.nupkg.sha512",
+        "skiasharp.nativeassets.maccatalyst.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Win32/3.119.1": {
+      "sha512": "8C4GSXVJqSr0y3Tyyv5jz6MJSTVUyYkMjeKrzK+VyZPGLo89MNoUEclVuYahzOCDdtbfXrd2HtxXfDuvoSXrUw==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.win32/3.119.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "icon.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows10.0.19041/_._",
+        "lib/net6.0/_._",
+        "lib/net8.0-windows10.0.19041/_._",
+        "lib/net8.0/_._",
+        "lib/netstandard2.0/_._",
+        "lib/netstandard2.1/_._",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "skiasharp.nativeassets.win32.3.119.1.nupkg.sha512",
+        "skiasharp.nativeassets.win32.nuspec"
+      ]
+    },
     "sqlite-net-pcl/1.9.172": {
       "sha512": "go533+huyvg5bOMmCpX+DyvLrcVRiEBIpqEiDHgXRijWIBBNkWnyMr/w+5ZzrUArKY+4ApucsbBnFtP3QITrJg==",
       "type": "package",
@@ -29986,6 +30819,7 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
+      "SkiaSharp >= 3.119.1",
       "System.Drawing.Common >= 9.0.10",
       "sqlite-net-pcl >= 1.9.172"
     ],
@@ -29994,6 +30828,7 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
+      "SkiaSharp >= 3.119.1",
       "System.Drawing.Common >= 9.0.10",
       "sqlite-net-pcl >= 1.9.172"
     ],
@@ -30002,6 +30837,7 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
       "Microsoft.NET.ILLink.Tasks >= 9.0.10",
+      "SkiaSharp >= 3.119.1",
       "System.Drawing.Common >= 9.0.10",
       "sqlite-net-pcl >= 1.9.172"
     ],
@@ -30009,6 +30845,7 @@
       "CommunityToolkit.Mvvm >= 8.4.0",
       "Microsoft.Extensions.Logging.Debug >= 9.0.8",
       "Microsoft.Maui.Controls >= 9.0.111",
+      "SkiaSharp >= 3.119.1",
       "System.Drawing.Common >= 9.0.10",
       "sqlite-net-pcl >= 1.9.172"
     ]
@@ -30098,6 +30935,10 @@
             "version": "[9.0.10, )",
             "autoReferenced": true
           },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[3.119.1, )"
+          },
           "System.Drawing.Common": {
             "target": "Package",
             "version": "[9.0.10, )"
@@ -30148,6 +30989,10 @@
             "target": "Package",
             "version": "[9.0.10, )",
             "autoReferenced": true
+          },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[3.119.1, )"
           },
           "System.Drawing.Common": {
             "target": "Package",
@@ -30200,6 +31045,10 @@
             "version": "[9.0.10, )",
             "autoReferenced": true
           },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[3.119.1, )"
+          },
           "System.Drawing.Common": {
             "target": "Package",
             "version": "[9.0.10, )"
@@ -30245,6 +31094,10 @@
           "Microsoft.Maui.Controls": {
             "target": "Package",
             "version": "[9.0.111, )"
+          },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[3.119.1, )"
           },
           "System.Drawing.Common": {
             "target": "Package",

@@ -4,7 +4,13 @@
              xmlns:local="clr-namespace:IdojarasNaplo"
              x:Class="IdojarasNaplo.MainPage"
              x:DataType="local:MainPageViewModel">
-    <Grid RowDefinitions="Auto,*" WidthRequest="300" RowSpacing="10" Padding="0,10">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto,*" WidthRequest="350" RowSpacing="10" Padding="0,10">
         <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
             <Button Text="New" Command="{Binding NewDiaryEntryCommand}"/>
             <Button Text="Edit" Command="{Binding EditDiaryEntryCommand}"/>
@@ -12,7 +18,7 @@
             <Button Text="Details" Command="{Binding ShowDiaryDetailsCommand}"/>
         </HorizontalStackLayout>
 
-        <Border StrokeThickness="5" Stroke="Yellow" StrokeShape="RoundRectangle 10" Grid.Row="1">
+        <Border StrokeThickness="2" Stroke="Brown" StrokeShape="RoundRectangle 10" Grid.Row="1">
             <CollectionView ItemsSource="{Binding Diaries}"
                             SelectedItem="{Binding SelectedDiary}"
                             SelectionMode="Single"
@@ -20,12 +26,12 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="local:Diary">
                         <Border Margin="5" Padding="5"
-                                Stroke="Orange" StrokeThickness="2" StrokeShape="RoundRectangle 10">
+                                Stroke="Green" StrokeThickness="1">
                             <VerticalStackLayout>
                                 <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Title}"/>
                                 <Label FontSize="Small" Text="{Binding Body}"/>
-                                <Label FontSize="Small" Text="{Binding Weather}"/>
-                                <Label FontSize="Small" Text="{Binding Location}"/>
+                                <Label FontSize="Small" Text="{Binding Temperature, StringFormat='Temperature: {0} °C'}"/>
+                                <Label FontSize="Small" Text="{Binding WeatherDescription}"/>
                             </VerticalStackLayout>
                         </Border>
                     </DataTemplate>

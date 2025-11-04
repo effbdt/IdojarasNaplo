@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="IdojarasNaplo.EditDiaryPage">
-
+             x:Class="IdojarasNaplo.EditDiaryPage"
+             xmlns:local="clr-namespace:IdojarasNaplo">
     <ContentPage.Resources>
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="Medium"/>
             <Setter Property="FontAttributes" Value="Bold"/>
         </Style>
+        <ResourceDictionary>
+            <local:NullToFalseConverter x:Key="NullToFalseConverter"/>
+        </ResourceDictionary>
     </ContentPage.Resources>
 
     <ScrollView>
@@ -16,22 +19,21 @@
             <Entry Text="{Binding Draft.Title}"/>
 
             <Label Text="Entry"/>
-            <Entry Text="{Binding Draft.Body}"/>
+            <Entry Text="{Binding Draft.Body}" />
 
-            <Image Source="{Binding EditedDiary.Photopath}"
-                   HorizontalOptions="Start"
-                   WidthRequest="300"/>
+            <Button Text="Get Weather" Command="{Binding GetWeatherCommand}" IsVisible="{Binding EditedDiary.WeatherDescription, Converter={StaticResource NullToFalseConverter}, ConverterParameter=invert}"/>
 
-            <Button Text="Get Weather" Command="{Binding GetWeatherCommand}" />
-
-            <Label Text="{Binding EditedDiary.Temperature, StringFormat='Temp: {0} °C'}" />
+            <Label Text="{Binding EditedDiary.Temperature, StringFormat='Temperature: {0} °C'}" IsVisible="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}"/>
             <Label Text="{Binding EditedDiary.WeatherDescription}" />
+
+            <Image Source="{Binding EditedDiary.Photopath}" HorizontalOptions="Start" WidthRequest="300"/>
 
             <Button Text="Take Picture" Command="{Binding TakePhotoCommand}" />
             <Button Text="Open Image" Command="{Binding OpenImageCommand}"/>
 
             <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
-                <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}"/>
+                <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}" IsEnabled="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}" />
+
                 <Button Text="Cancel" Command="{Binding CancelEditCommand}"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>

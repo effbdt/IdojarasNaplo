@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkiaSharp;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -8,47 +9,35 @@ using System.Threading.Tasks;
 
 namespace IdojarasNaplo
 {
-	public class ImageProcessing : IImageProcessing
+	public static class ImageProcessing
 	{
-		public static void Grayscale(Bitmap b)
+
+		public static async Task<string> ConvertToGrayScaleAsync(string path)
 		{
-			BitmapData bmData = b.LockBits(new Rectangle(0, 0, b.Width, b.Height),
-				ImageLockMode.ReadWrite, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+			using var input = File.OpenRead(path);
+			using var original = SKBitmap.Decode(input);
 
-			int stride = bmData.Stride;
-			IntPtr Scan0 = bmData.Scan0;
-
-			byte[] redLUT = new byte[256];
-			byte[] greenLUT = new byte[256];
-			byte[] blueLUT = new byte[256];
-			for (int i = 0; i < 256; i++)
+			var gray = new SKBitmap(original.Width, original.Height);
+			for (int y = 0; y < original.Height; y++)
 			{
-				redLUT[i] = (byte)((299 * i) / 1000);
-				greenLUT[i] = (byte)((587 * i) / 1000);
-				blueLUT[i] = (byte)((114 * i) / 1000);
-			}
-
-			unsafe
-			{
-				byte* pBase = (byte*)Scan0;
-
-				int nHeight = b.Height;
-				int nWidth = b.Width;
-
-				Parallel.For(0, nHeight, y =>
+				for (int x = 0; x < original.Width; x++)
 				{
-					byte* p = pBase + y * stride;
+					var color = original.GetPixel(x, y);
 
-					for (int x = 0; x < nWidth; ++x)
-					{
-						int gray = (redLUT[p[2]] + greenLUT[p[1]] + blueLUT[p[0]]);
-						p[0] = p[1] = p[2] = (byte)gray;
-						p += 3;
-					}
-				});
+					byte g = (byte)(0.3 * color.Red + 0.59 * color.Green + 0.11 * color.Blue);
+
+					gray.SetPixel(x, y, new SKColor(g, g, g));
+				}
 			}
 
-			b.UnlockBits(bmData);
+			string grayPath = Path.Combine(FileSystem.AppDataDirectory, $"gray_{Path.GetFileName(path)}");
+
+			using var output = File.OpenWrite(grayPath);
+			using var image = SKImage.FromBitmap(gray);
+			using var data = image.Encode(SKEncodedImageFormat.Jpeg, 90);
+			data.SaveTo(output);
+
+			return grayPath;
 		}
 	}
 }
