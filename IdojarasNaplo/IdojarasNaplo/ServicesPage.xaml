@@ -12,10 +12,32 @@
             <local:NullToFalseConverter x:Key="NullToFalseConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <Grid RowDefinitions="Auto,*" WidthRequest="350" RowSpacing="8" Padding="0,05">
-        <HorizontalStackLayout Spacing="5" HorizontalOptions="Start">
-            <Button Text="AverageTemperature:" Command="{Binding GetAvgTemperatureCommand}"/>
-            <Label Text="{Binding AvgTemperature, StringFormat=' {0:F1} °C'}" HorizontalOptions="Center" FontSize="25" IsVisible="{Binding AvgTemperature, Converter={StaticResource NullToFalseConverter}}"/>
-        </HorizontalStackLayout>
+
+    <Grid RowDefinitions="Auto,Auto, Auto" WidthRequest="350" RowSpacing="8" Padding="0,05">
+
+        <VerticalStackLayout Padding="10" Spacing="12">
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="AverageTemperature:" Command="{Binding GetAvgTemperatureCommand}" />
+                <Label Text="{Binding AvgTemperature, StringFormat='{0:F1} °C'}"
+                   FontSize="25"
+                   IsVisible="{Binding AvgTemperature, Converter={StaticResource NullToFalseConverter}}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="ColdestTemperature:" Command="{Binding GetColdestTemperatureCommand}" />
+                <Label Text="{Binding ColdestTemperature, StringFormat='{0:F1} °C'}"
+                   FontSize="25"
+                   IsVisible="{Binding ColdestTemperature, Converter={StaticResource NullToFalseConverter}}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="HottestTemperature:" Command="{Binding GetHottestTemperatureCommand}" />
+                <Label Text="{Binding HottestTemperature, StringFormat='{0:F1} °C'}"
+                   FontSize="25"
+                   IsVisible="{Binding HottestTemperature, Converter={StaticResource NullToFalseConverter}}" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
     </Grid>
+
 </ContentPage>

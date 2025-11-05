@@ -119,6 +119,8 @@
         <member name="T:IdojarasNaplo.ServicesViewModel">
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:IdojarasNaplo.ServicesViewModel.Diaries">
             <inheritdoc cref="F:IdojarasNaplo.ServicesViewModel.diaries"/>
@@ -126,11 +128,29 @@
         <member name="P:IdojarasNaplo.ServicesViewModel.AvgTemperature">
             <inheritdoc cref="F:IdojarasNaplo.ServicesViewModel.avgTemperature"/>
         </member>
+        <member name="P:IdojarasNaplo.ServicesViewModel.ColdestTemperature">
+            <inheritdoc cref="F:IdojarasNaplo.ServicesViewModel.coldestTemperature"/>
+        </member>
+        <member name="P:IdojarasNaplo.ServicesViewModel.HottestTemperature">
+            <inheritdoc cref="F:IdojarasNaplo.ServicesViewModel.hottestTemperature"/>
+        </member>
         <member name="F:IdojarasNaplo.ServicesViewModel.getAvgTemperatureCommand">
             <summary>The backing field for <see cref="P:IdojarasNaplo.ServicesViewModel.GetAvgTemperatureCommand"/>.</summary>
         </member>
         <member name="P:IdojarasNaplo.ServicesViewModel.GetAvgTemperatureCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.ServicesViewModel.GetAvgTemperature"/>.</summary>
+        </member>
+        <member name="F:IdojarasNaplo.ServicesViewModel.getColdestTemperatureCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.ServicesViewModel.GetColdestTemperatureCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.ServicesViewModel.GetColdestTemperatureCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.ServicesViewModel.GetColdestTemperature"/>.</summary>
+        </member>
+        <member name="F:IdojarasNaplo.ServicesViewModel.getHottestTemperatureCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.ServicesViewModel.GetHottestTemperatureCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.ServicesViewModel.GetHottestTemperatureCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.ServicesViewModel.GetHottestTemperature"/>.</summary>
         </member>
         <member name="T:IdojarasNaplo.Resource">
             <summary>
@@ -183,6 +203,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AvgTemperature">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AvgTemperature" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ColdestTemperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ColdestTemperature" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HottestTemperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HottestTemperature" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -227,6 +253,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AvgTemperature">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AvgTemperature" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ColdestTemperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ColdestTemperature" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HottestTemperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HottestTemperature" generated properties.</summary>
         </member>
     </members>
 </doc>

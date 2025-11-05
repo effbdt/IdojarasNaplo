@@ -32,6 +32,12 @@ namespace IdojarasNaplo
 		[ObservableProperty]
 		double? avgTemperature;
 
+		[ObservableProperty]
+		double? coldestTemperature;
+
+		[ObservableProperty]
+		double? hottestTemperature;
+
 		[RelayCommand]
 		public void GetAvgTemperature()
 		{
@@ -41,7 +47,27 @@ namespace IdojarasNaplo
 				.Select(d => d.Temperature.Value);
 
 			AvgTemperature = values.Any() ? values.Average() : null;
-
 		}
+
+		[RelayCommand]
+		public void GetColdestTemperature()
+		{
+			var values = diaries.
+				Where(d => d.Temperature.HasValue).
+				Select(d => d.Temperature.Value);
+
+			ColdestTemperature = values.Any() ? values.Min() : null;
+		}
+
+		[RelayCommand]
+		public void GetHottestTemperature()
+		{
+			var values = diaries.
+				Where(d => d.Temperature.HasValue).
+				Select(d => d.Temperature.Value);
+
+			HottestTemperature = values.Any() ? values.Max() : null;
+		}
+
 	}
 }
