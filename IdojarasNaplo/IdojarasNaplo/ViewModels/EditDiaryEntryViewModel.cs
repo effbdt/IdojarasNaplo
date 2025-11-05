@@ -86,6 +86,14 @@ namespace IdojarasNaplo
 			}
 		}
 
+		[RelayCommand]
+		public void RemoveImage()
+		{
+			EditedDiary.Photopath = null;
+			Draft.Photopath = null;
+		}
+
+
 		private async Task GetLocationAsync()
 		{
 			var location = await Geolocation.GetLastKnownLocationAsync();
