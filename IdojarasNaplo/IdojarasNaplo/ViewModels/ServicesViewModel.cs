@@ -23,7 +23,7 @@ namespace IdojarasNaplo
 			_db = db;
 			LoadDiaries();
 		}
-		private async Task LoadDiaries()
+		public async Task LoadDiaries()
 		{
 			var all = await _db.GetEntries();
 			Diaries = new ObservableCollection<Diary>(all);
@@ -37,6 +37,12 @@ namespace IdojarasNaplo
 
 		[ObservableProperty]
 		double? hottestTemperature;
+
+		[ObservableProperty]
+		int? entriesWithoutPhotoProp = null;
+
+		[ObservableProperty]
+		int? entriesWithPhotoProp = null;
 
 		[RelayCommand]
 		public void GetAvgTemperature()
@@ -69,5 +75,25 @@ namespace IdojarasNaplo
 			HottestTemperature = values.Any() ? values.Max() : null;
 		}
 
+		[RelayCommand]
+		public void EntriesWithPhoto()
+		{
+			EntriesWithPhotoProp = Diaries?.Count(d => !string.IsNullOrEmpty(d.Photopath)) ?? 0;
+		}
+
+		[RelayCommand]
+		public void EntriesWithoutPhoto()
+		{
+			EntriesWithoutPhotoProp = Diaries?.Count(d => string.IsNullOrEmpty(d.Photopath)) ?? 0;
+		}
+
+		public void ResetServiceValues()
+		{
+			EntriesWithPhotoProp = null;
+			EntriesWithoutPhotoProp = null;
+			AvgTemperature = null;
+			ColdestTemperature = null;
+			HottestTemperature = null;
+		}
 	}
 }

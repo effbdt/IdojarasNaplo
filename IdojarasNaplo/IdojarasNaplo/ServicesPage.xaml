@@ -13,7 +13,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="Auto,Auto, Auto" WidthRequest="350" RowSpacing="8" Padding="0,05">
+    <Grid RowDefinitions="Auto,Auto, Auto, Auto, Auto" WidthRequest="350" RowSpacing="8" Padding="0,05">
 
         <VerticalStackLayout Padding="10" Spacing="12">
 
@@ -36,6 +36,20 @@
                 <Label Text="{Binding HottestTemperature, StringFormat='{0:F1} °C'}"
                    FontSize="25"
                    IsVisible="{Binding HottestTemperature, Converter={StaticResource NullToFalseConverter}}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Entries without a picture:" Command="{Binding EntriesWithoutPhotoCommand}" />
+                <Label Text="{Binding EntriesWithoutPhotoProp, StringFormat='{0} entries'}"
+                    FontSize="25"
+                    IsVisible="{Binding EntriesWithoutPhotoProp, Converter={StaticResource NullToFalseConverter}}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Entries with a picture:" Command="{Binding EntriesWithPhotoCommand}" />
+                <Label Text="{Binding EntriesWithPhotoProp, StringFormat='{0} entries'}"
+                     FontSize="25"
+                     IsVisible="{Binding EntriesWithPhotoProp, Converter={StaticResource NullToFalseConverter}}" />
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </Grid>

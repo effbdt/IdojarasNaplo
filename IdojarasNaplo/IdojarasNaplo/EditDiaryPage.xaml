@@ -32,6 +32,7 @@
 
             <Button Text="Take Picture" Command="{Binding TakePhotoCommand}" />
             <Button Text="Open Image" Command="{Binding OpenImageCommand}"/>
+            <Button Text="Remove Image" />
 
             <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
                 <Button Text="Save" Command="{Binding SaveDiaryEntryCommand}" IsEnabled="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}" />
