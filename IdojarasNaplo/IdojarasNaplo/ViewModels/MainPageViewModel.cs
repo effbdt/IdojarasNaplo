@@ -122,7 +122,7 @@ namespace IdojarasNaplo
 			{
 				var param = new ShellNavigationQueryParameters
 				{
-					{"DiaryEntry", selectedDiary}
+					{"DiaryEntry", SelectedDiary}
 				};
 				await Shell.Current.GoToAsync("diaryDetails", param);
 			}
@@ -131,14 +131,7 @@ namespace IdojarasNaplo
 		[RelayCommand]
 		public async Task GoToServicesPage()
 		{
-			if (Diaries != null)
-			{
-				var param = new ShellNavigationQueryParameters
-				{
-					{"AllDiaries", Diaries}
-				};
-				await Shell.Current.GoToAsync("servicePage", param);
-			}
+			await Shell.Current.GoToAsync("servicePage");
 		}
 	}
 }

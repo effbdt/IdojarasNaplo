@@ -118,9 +118,19 @@
         </member>
         <member name="T:IdojarasNaplo.ServicesViewModel">
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:IdojarasNaplo.ServicesViewModel.Diaries">
             <inheritdoc cref="F:IdojarasNaplo.ServicesViewModel.diaries"/>
+        </member>
+        <member name="P:IdojarasNaplo.ServicesViewModel.AvgTemperature">
+            <inheritdoc cref="F:IdojarasNaplo.ServicesViewModel.avgTemperature"/>
+        </member>
+        <member name="F:IdojarasNaplo.ServicesViewModel.getAvgTemperatureCommand">
+            <summary>The backing field for <see cref="P:IdojarasNaplo.ServicesViewModel.GetAvgTemperatureCommand"/>.</summary>
+        </member>
+        <member name="P:IdojarasNaplo.ServicesViewModel.GetAvgTemperatureCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.ServicesViewModel.GetAvgTemperature"/>.</summary>
         </member>
         <member name="T:IdojarasNaplo.Resource">
             <summary>
@@ -170,6 +180,9 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Diaries">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Diaries" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AvgTemperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AvgTemperature" generated properties.</summary>
+        </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
@@ -211,6 +224,9 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Diaries">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Diaries" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AvgTemperature">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AvgTemperature" generated properties.</summary>
         </member>
     </members>
 </doc>

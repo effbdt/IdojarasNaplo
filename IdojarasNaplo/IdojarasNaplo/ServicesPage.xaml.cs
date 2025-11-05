@@ -2,11 +2,12 @@ namespace IdojarasNaplo;
 
 public partial class ServicesPage : ContentPage
 {
-	ServicesViewModel viewModel;
+	private ServicesViewModel viewModel;
 
 	public ServicesPage(ServicesViewModel vm)
 	{
 		InitializeComponent();
 		this.viewModel = vm;
+		BindingContext = vm;
 	}
 }

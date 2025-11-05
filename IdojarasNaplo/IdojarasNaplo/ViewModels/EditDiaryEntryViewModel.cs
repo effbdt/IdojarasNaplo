@@ -100,8 +100,7 @@ namespace IdojarasNaplo
 			Draft.Longitude = longitude;
 		}
 
-		private static readonly JsonSerializerOptions jsonOptions =
-	new() { PropertyNameCaseInsensitive = true };
+		private static readonly JsonSerializerOptions jsonOptions = new() { PropertyNameCaseInsensitive = true };
 
 		[RelayCommand]
 		public async Task GetWeatherAsync()
@@ -110,6 +109,9 @@ namespace IdojarasNaplo
 			if (EditedDiary.Latitude == null || EditedDiary.Longitude == null)
 				return;
 
+
+			//I will not hide it github
+			//open source free weather api key please dont steal it
 			string apiKey = "4643e617cca60585379ad4d2f6585636";
 
 			string url =

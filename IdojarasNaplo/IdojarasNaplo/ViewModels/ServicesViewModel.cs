@@ -1,20 +1,47 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace IdojarasNaplo
 {
-	[QueryProperty(nameof(Diaries), "AllDiaries")]
 	public partial class ServicesViewModel : ObservableObject
 	{
 		[ObservableProperty]
-		Diary[] diaries;
+		ObservableCollection<Diary> diaries;
 
+		readonly IDiaryDatabase _db;
 
+		public ServicesViewModel(IDiaryDatabase db)
+		{
+			_db = db;
+			LoadDiaries();
+		}
+		private async Task LoadDiaries()
+		{
+			var all = await _db.GetEntries();
+			Diaries = new ObservableCollection<Diary>(all);
+		}
 
+		[ObservableProperty]
+		double? avgTemperature;
 
+		[RelayCommand]
+		public void GetAvgTemperature()
+		{
+
+			var values = diaries.
+				Where(d => d.Temperature.HasValue)
+				.Select(d => d.Temperature.Value);
+
+			AvgTemperature = values.Any() ? values.Average() : null;
+
+		}
 	}
 }
