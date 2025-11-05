@@ -15,6 +15,8 @@
         <VerticalStackLayout Padding="10" Spacing="10">
             <Label Text="{Binding Diary.Title,StringFormat='Title: {0}'}" FontAttributes="Bold"/>
             <Label Text="{Binding Diary.Body}"/>
+            <Label Text="Date:" FontAttributes="Bold"/>
+            <Label Text="{Binding Diary.Date, StringFormat='{0:yyyy:MM:yy}'}"/>
             <Label Text="Weather:" FontAttributes="Bold"/>
             <Label Text="{Binding Diary.Temperature, StringFormat='Temp: {0} °C'}" />
             <Label Text="{Binding Diary.WeatherDescription}" />

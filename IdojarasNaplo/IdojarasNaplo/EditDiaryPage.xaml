@@ -21,6 +21,8 @@
             <Label Text="Entry"/>
             <Entry Text="{Binding Draft.Body}" />
 
+            <Label Text="{Binding Draft.Date, StringFormat='Date: {0:yyyy:MM:dd}'}"/>
+
             <Button Text="Get Weather" Command="{Binding GetWeatherCommand}" IsVisible="{Binding EditedDiary.WeatherDescription, Converter={StaticResource NullToFalseConverter}, ConverterParameter=invert}"/>
 
             <Label Text="{Binding EditedDiary.Temperature, StringFormat='Temperature: {0} °C'}" IsVisible="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}"/>

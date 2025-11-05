@@ -36,6 +36,9 @@ namespace IdojarasNaplo
 		[ObservableProperty]
 		double? temperature;
 
+		[ObservableProperty]
+		DateTime date;
+
 		public Diary GetCopy()
 		{
 			return (Diary)this.MemberwiseClone();

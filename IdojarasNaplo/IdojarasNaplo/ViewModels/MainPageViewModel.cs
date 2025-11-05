@@ -76,9 +76,14 @@ namespace IdojarasNaplo
 		public async Task NewDiaryEntryAsync()
 		{
 			SelectedDiary = null;
+			var newDiary = new Diary
+			{
+				Date = DateTime.Today
+			};
+
 			var param = new ShellNavigationQueryParameters
 			{
-				{"DiaryEntry", new Diary() }
+				{"DiaryEntry", newDiary }
 			};
 			await Shell.Current.GoToAsync("editDiary", param);
 		}
