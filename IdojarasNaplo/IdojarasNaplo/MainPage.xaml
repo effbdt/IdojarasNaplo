@@ -33,6 +33,7 @@
                                 <Label FontSize="Small" Text="{Binding Body}"/>
                                 <Label FontSize="Small" Text="{Binding Temperature, StringFormat='Temperature: {0} °C'}"/>
                                 <Label FontSize="Small" Text="{Binding WeatherDescription}"/>
+                                <Label FontSize="Small" Text="{Binding Date}"/>
                             </VerticalStackLayout>
                         </Border>
                     </DataTemplate>
