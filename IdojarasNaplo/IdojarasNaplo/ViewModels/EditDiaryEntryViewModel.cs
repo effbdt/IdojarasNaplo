@@ -24,7 +24,6 @@ namespace IdojarasNaplo
 		public string WeatherDescription { get; set; }
 		public double Temperature { get; set; }
 
-
 		public void InitDraft()
 		{
 			Draft = EditedDiary.GetCopy();

@@ -10,6 +10,7 @@
         </Style>
         <ResourceDictionary>
             <local:NullToFalseConverter x:Key="NullToFalseConverter"/>
+            <local:CelsiusToFahrenheitConverter x:Key="CelsiusToFahrenheitConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -23,9 +24,24 @@
 
             <Label Text="{Binding Draft.Date, StringFormat='Date: {0:yyyy:MM:dd}'}"/>
 
+
+            <HorizontalStackLayout Spacing="6" IsVisible="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}">
+                <Label Text="°F" VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding EditedDiary.ShowFahrenheit}"/>
+            </HorizontalStackLayout>
             <Button Text="Get Weather" Command="{Binding GetWeatherCommand}" IsVisible="{Binding EditedDiary.WeatherDescription, Converter={StaticResource NullToFalseConverter}, ConverterParameter=invert}"/>
 
-            <Label Text="{Binding EditedDiary.Temperature, StringFormat='Temperature: {0} °C'}" IsVisible="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}"/>
+            <Label FontSize="20"
+                    IsVisible="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}">
+                <Label.Text>
+                    <MultiBinding Converter="{StaticResource CelsiusToFahrenheitConverter}">
+                        <Binding Path="EditedDiary.Temperature"/>
+                        <Binding Path="EditedDiary.ShowFahrenheit"/>
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
+
+            <!--<Label Text="{Binding EditedDiary.Temperature, StringFormat='Temperature: {0} °C'}" IsVisible="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}"/>-->
             <Label Text="{Binding EditedDiary.WeatherDescription}" />
 
             <Image Source="{Binding EditedDiary.Photopath}" HorizontalOptions="Start" WidthRequest="300"/>

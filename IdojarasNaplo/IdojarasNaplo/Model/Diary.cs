@@ -39,6 +39,9 @@ namespace IdojarasNaplo
 		[ObservableProperty]
 		DateTime date;
 
+		[ObservableProperty]
+		bool showFahrenheit;
+
 		public Diary GetCopy()
 		{
 			return (Diary)this.MemberwiseClone();
