@@ -35,6 +35,21 @@ namespace IdojarasNaplo
 			}
 		}
 
+		public bool IsFullViewEnabled
+		{
+
+			get
+			{
+				return Preferences.Default.Get("fullview", true);
+			}
+			set
+			{
+				Preferences.Default.Set("fullview", value);
+				OnPropertyChanged();
+			}
+		}
+
+
 		public MainPageViewModel(IDiaryDatabase db)
 		{
 			_db = db;
@@ -116,7 +131,7 @@ namespace IdojarasNaplo
 			}
 			else
 			{
-				WeakReferenceMessenger.Default.Send("Select a diary entry to delete");
+				WeakReferenceMessenger.Default.Send("Select a diary entry to delete.");
 			}
 		}
 
@@ -130,6 +145,10 @@ namespace IdojarasNaplo
 					{"DiaryEntry", SelectedDiary}
 				};
 				await Shell.Current.GoToAsync("diaryDetails", param);
+			}
+			else
+			{
+				WeakReferenceMessenger.Default.Send("Select a diary entry to see it's details.");
 			}
 		}
 

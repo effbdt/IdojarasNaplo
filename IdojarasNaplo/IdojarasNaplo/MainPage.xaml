@@ -10,8 +10,8 @@
         </Style>
     </ContentPage.Resources>
 
-    <Grid RowDefinitions="Auto,*" WidthRequest="350" RowSpacing="8" Padding="0,05">
-        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+    <Grid RowDefinitions="Auto, Auto, *" WidthRequest="350" RowSpacing="8" Padding="0,05">
+        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center" Grid.Row="0">
             <Button Text="New" Command="{Binding NewDiaryEntryCommand}"/>
             <Button Text="Edit" Command="{Binding EditDiaryEntryCommand}"/>
             <Button Text="Delete" Command="{Binding DeleteEntryCommand}"/>
@@ -19,7 +19,12 @@
             <Button Text="Services" Command="{Binding GoToServicesPageCommand}"/>
         </HorizontalStackLayout>
 
-        <Border StrokeThickness="2" Stroke="Brown" StrokeShape="RoundRectangle 10" Grid.Row="1">
+        <HorizontalStackLayout Spacing="10" Grid.Row="1">
+            <Label Text="Detailed View" VerticalOptions="Center" TextColor="White"/>
+            <Switch IsToggled="{Binding IsFullViewEnabled}"/>
+        </HorizontalStackLayout>
+
+        <Border StrokeThickness="2" Stroke="Brown" StrokeShape="RoundRectangle 10" Grid.Row="2">
             <CollectionView ItemsSource="{Binding Diaries}"
                             SelectedItem="{Binding SelectedDiary}"
                             SelectionMode="Single"
@@ -30,10 +35,14 @@
                                 Stroke="Green" StrokeThickness="1">
                             <VerticalStackLayout>
                                 <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Title}"/>
-                                <Label FontSize="Small" Text="{Binding Body}"/>
+                                <Label FontSize="Small" Text="{Binding Body}" 
+                                       IsVisible="{Binding BindingContext.IsFullViewEnabled, 
+                                       Source={RelativeSource AncestorType={x:Type ContentPage}}}"/>
                                 <Label FontSize="Small" Text="{Binding Temperature, StringFormat='Temperature: {0} °C'}"/>
-                                <Label FontSize="Small" Text="{Binding WeatherDescription}"/>
-                                <Label FontSize="Small" Text="{Binding Date}"/>
+                                <Label FontSize="Small" Text="{Binding WeatherDescription}"
+                                       IsVisible="{Binding BindingContext.IsFullViewEnabled,
+                                       Source={RelativeSource AncestorType={x:Type ContentPage}}}"/>
+                                <Label FontSize="Small" Text="{Binding Date, StringFormat='{0:yyyy:MM:dd}'}"/>
                             </VerticalStackLayout>
                         </Border>
                     </DataTemplate>
