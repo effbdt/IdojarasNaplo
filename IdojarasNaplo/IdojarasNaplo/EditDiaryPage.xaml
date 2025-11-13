@@ -44,7 +44,7 @@
             <!--<Label Text="{Binding EditedDiary.Temperature, StringFormat='Temperature: {0} °C'}" IsVisible="{Binding EditedDiary.Temperature, Converter={StaticResource NullToFalseConverter}}"/>-->
             <Label Text="{Binding EditedDiary.WeatherDescription}" />
 
-            <Image Source="{Binding EditedDiary.Photopath}" HorizontalOptions="Start" WidthRequest="300"/>
+            <Image Source="{Binding EditedDiary.Photopath}" HorizontalOptions="Center" WidthRequest="300"/>
 
             <Button Text="Take Picture" Command="{Binding TakePhotoCommand}" />
             <Button Text="Open Image" Command="{Binding OpenImageCommand}"/>

@@ -80,7 +80,7 @@
             <summary>The backing field for <see cref="P:IdojarasNaplo.EditDiaryEntryViewModel.RemoveImageCommand"/>.</summary>
         </member>
         <member name="P:IdojarasNaplo.EditDiaryEntryViewModel.RemoveImageCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.EditDiaryEntryViewModel.RemoveImage"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:IdojarasNaplo.EditDiaryEntryViewModel.RemoveImage"/>.</summary>
         </member>
         <member name="F:IdojarasNaplo.EditDiaryEntryViewModel.getWeatherCommand">
             <summary>The backing field for <see cref="P:IdojarasNaplo.EditDiaryEntryViewModel.GetWeatherCommand"/>.</summary>

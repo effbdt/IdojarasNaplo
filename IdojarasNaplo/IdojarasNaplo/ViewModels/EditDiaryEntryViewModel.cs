@@ -86,8 +86,25 @@ namespace IdojarasNaplo
 		}
 
 		[RelayCommand]
-		public void RemoveImage()
+		public async Task RemoveImage()
 		{
+			if (string.IsNullOrEmpty(Draft?.Photopath))
+				return;
+
+			bool confirm = await Shell.Current.DisplayAlert(
+				"Confirm",
+				"Are you sure you want to delete this image?",
+				"Yes",
+				"No");
+
+			if (!confirm)
+				return;
+
+			string imgURL = Draft.Photopath;
+			if (File.Exists(imgURL))
+			{
+				File.Delete(imgURL);
+			}
 			EditedDiary.Photopath = null;
 			Draft.Photopath = null;
 		}

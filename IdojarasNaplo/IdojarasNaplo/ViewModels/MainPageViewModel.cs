@@ -94,7 +94,7 @@ namespace IdojarasNaplo
 			SelectedDiary = null;
 			var newDiary = new Diary
 			{
-				Date = DateTime.Today
+				Date = DateTime.Today,
 			};
 
 			var param = new ShellNavigationQueryParameters
@@ -103,6 +103,7 @@ namespace IdojarasNaplo
 			};
 			await Shell.Current.GoToAsync("editDiary", param);
 		}
+
 
 		[RelayCommand]
 		public async Task EditDiaryEntryAsync()

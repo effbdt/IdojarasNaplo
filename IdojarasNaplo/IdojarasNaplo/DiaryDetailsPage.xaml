@@ -22,7 +22,7 @@
             <Label Text="{Binding Diary.WeatherDescription}" />
             <Label Text="Attached Image:" FontAttributes="Bold"/>
             <Label Text="There was no image attached" IsVisible="{Binding Diary.Photopath, Converter={StaticResource NullToFalseConverter}, ConverterParameter=invert}"/>
-            <Image Source="{Binding Diary.Photopath}" WidthRequest="350" HeightRequest="450" HorizontalOptions="Start"/>
+            <Image Source="{Binding Diary.Photopath}" WidthRequest="350" HeightRequest="450" HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
